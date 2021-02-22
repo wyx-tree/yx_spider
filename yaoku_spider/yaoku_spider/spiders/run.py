@@ -48,13 +48,14 @@ class RunSpider(scrapy.Spider):
     name = 'run'
     allowed_domains = []
     start_urls = []
-    client = MongoClient('localhost', 27017)
+
+    client = MongoClient('mongodb://root:123456@172.16.10.136:27017/')
     db = client['spider']
     collection = db['result']
 
 
     def start_requests(self):
-        for i in range(2000, 400000):
+        for i in range(4000, 400000):
             # url = 'https://www.315jiage.cn/n327184.aspx'
             url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
             yield scrapy.FormRequest(url, callback=self.parse_first, formdata=formdata, cookies=cookies, headers=headers, meta={'i': i})
