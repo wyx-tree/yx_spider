@@ -1,9 +1,11 @@
 import scrapy
 from pymongo import MongoClient
 
+
 cookies = {
     'HMACCOUNT_BFESS': '98606595895E1C2C',
     'BAIDUID_BFESS': 'A0D185949257010435344FBD96EC16C3:FG=1',
+    'ab_sr': '1.0.0_MDZhNDhlZDA4ZjRiNTU1NzNlNWI0YzQ1MDJkNmMyMDcwZDI1Zjk3ZDMwMzk2YzQ0MjgyODk5Y2FkYTA3MGE0YjQ3NmMzZTk0YTY5ZTRjM2FkNjlmYmFkNmFhZDExY2I4',
 }
 
 headers = {
@@ -18,12 +20,13 @@ headers = {
     'sec-fetch-mode': 'cors',
     'sec-fetch-user': '?1',
     'sec-fetch-dest': 'empty',
-    'referer': 'https://www.315jiage.cn/n85230.aspx',
+    'referer': 'https://www.315jiage.cn/n364070.aspx',
     'accept-language': 'zh-CN,zh;q=0.9',
-    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=cb6dffcd3eb037ce1f0c1ea1ebce029d04b526ae-1614044748-0-250; rtv=5292BC,34211904; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614045574',
-    'if-modified-since': 'Tue, 23 Feb 2021 01:59:22 GMT',
-    'Referer': '',
+    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=6e8c0f6c8e3f702b46d51e960a58e244889f6d90-1614059409-0-250; rtv=5293E8,17928326; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614063044',
+    'if-modified-since': 'Tue, 23 Feb 2021 06:50:19 GMT',
+    'Referer': 'https://www.315jiage.cn/n364070.aspx',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
+    'if-none-match': '"8083f6f96014cc1:0"',
     'Connection': 'keep-alive',
     'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
     'Sec-Fetch-Site': 'cross-site',
@@ -31,8 +34,6 @@ headers = {
     'Sec-Fetch-Dest': 'image',
     'Accept-Language': 'zh-CN,zh;q=0.9',
     'If-None-Match': 'e20946816f7a56ad5f166b26e3ccfff5',
-    'Upgrade-Insecure-Requests': '1',
-    'if-none-match': '"bdc8d91aa8efd61:0"',
     'X-Requested-With': 'XMLHttpRequest',
     'x-requested-with': 'XMLHttpRequest',
     'pragma': 'no-cache',
@@ -40,9 +41,9 @@ headers = {
     'origin': 'https://www.315jiage.cn',
 }
 
-formdata = {
-    'cmd': 'logVisit',
-    'id': '85230'
+data = {
+  'cmd': 'logVisit',
+  'id': '364070'
 }
 
 
@@ -55,11 +56,11 @@ class RunSpider(scrapy.Spider):
     collection = db['result']
 
     def start_requests(self):
-        for i in range(107680, 400000):
+        for i in range(133315, 400000):
             # url = 'https://www.315jiage.cn/n327184.aspx'
             url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
             print(url)
-            yield scrapy.FormRequest(url, callback=self.parse_first, formdata=formdata, cookies=cookies,
+            yield scrapy.FormRequest(url, callback=self.parse_first, formdata=data, cookies=cookies,
                                      headers=headers, meta={'i': i}, dont_filter=True)
 
     def parse_first(self, response):
