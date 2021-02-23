@@ -52,12 +52,11 @@ data = {
   'cmd': 'logVisit',
   'id': '85230'
 }
-
 # url = 'https://www.315jiage.cn/n325021.aspx'
 # url = 'https://www.315jiage.cn/n327184.aspx'
 # url = 'https://www.315jiage.cn/n134488.aspx'
 # for i in range(2000, 400000):
-for i in range(107680, 400000):
+for i in range(111981, 400000):
     url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
     response = requests.post(url, headers=headers, cookies=cookies, data=data)
     print(response.status_code)
@@ -69,7 +68,10 @@ for i in range(107680, 400000):
         commodity_code_list = root.xpath('//div/span[contains(text(), "条形码")]/following::text()')
         approval_no_list = root.xpath('//div[@class="block-info-prop text-oneline"]/u/a/text()')
         if commodity_name_list:
-            result = {'id': i,'commodity_name': commodity_name_list[0], 'commodity_code': commodity_code_list[0], 'approval_no': approval_no_list[0]}
-            collection.update({'id': i}, result, upsert=True)
-            print(result)
+            try:
+                result = {'id': i,'commodity_name': commodity_name_list[0], 'commodity_code': commodity_code_list[0], 'approval_no': approval_no_list[0]}
+                collection.update({'id': i}, result, upsert=True)
+                print(result)
+            except:
+                pass
 
