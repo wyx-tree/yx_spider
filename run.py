@@ -55,7 +55,7 @@ data = {
 # url = 'https://www.315jiage.cn/n327184.aspx'
 # url = 'https://www.315jiage.cn/n134488.aspx'
 # for i in range(2000, 400000):
-for i in range(169608, 400000):
+for i in range(179686, 400000):
     url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
     response = requests.post(url, headers=headers, cookies=cookies, data=data)
     print(response.status_code)
