@@ -12,4 +12,4 @@ BOT_NAME = 'yaoku_spider'
 SPIDER_MODULES = ['yaoku_spider.spiders']
 NEWSPIDER_MODULE = 'yaoku_spider.spiders'
 
-LOG_LEVEL='ERROR'
+# LOG_LEVEL='ERROR'
