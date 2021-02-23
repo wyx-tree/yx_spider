@@ -2,15 +2,16 @@ import requests
 from lxml import etree
 
 from pymongo import MongoClient
-client = MongoClient('localhost', 27017)
+
+client = MongoClient('mongodb://root:123456@172.16.10.136:27017/')
 db = client['spider']
 collection = db['result']
+
 
 
 cookies = {
     'HMACCOUNT_BFESS': '98606595895E1C2C',
     'BAIDUID_BFESS': 'A0D185949257010435344FBD96EC16C3:FG=1',
-    'ab_sr': '1.0.0_MTE4ZTU3N2ZkMTUxOGYzN2IyZTk0YTRmMWY1YTk5ZDI5ZWI0NmY3M2ZhMWMyZTVmZjk2NzVjY2NhNTU1OGJhOWIzMDgzNTljZmI3Yzc2NWFjMWI3MGEwYWQ0YzUzMDU2',
 }
 
 headers = {
@@ -25,13 +26,12 @@ headers = {
     'sec-fetch-mode': 'cors',
     'sec-fetch-user': '?1',
     'sec-fetch-dest': 'empty',
+    'referer': 'https://www.315jiage.cn/n85230.aspx',
     'accept-language': 'zh-CN,zh;q=0.9',
-    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563; rtv=528D8F,6076930; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1613962902',
-    'if-modified-since': 'Mon, 22 Feb 2021 02:46:32 GMT',
-    'Referer': 'https://www.315jiage.cn/n327184.aspx',
+    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=cb6dffcd3eb037ce1f0c1ea1ebce029d04b526ae-1614044748-0-250; rtv=5292BC,34211904; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614045574',
+    'if-modified-since': 'Tue, 23 Feb 2021 01:59:22 GMT',
+    'Referer': '',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
-    'referer': 'https://www.315jiage.cn/n327184.aspx',
-    'if-none-match': '"56468e185161d41:0"',
     'Connection': 'keep-alive',
     'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
     'Sec-Fetch-Site': 'cross-site',
@@ -39,6 +39,8 @@ headers = {
     'Sec-Fetch-Dest': 'image',
     'Accept-Language': 'zh-CN,zh;q=0.9',
     'If-None-Match': 'e20946816f7a56ad5f166b26e3ccfff5',
+    'Upgrade-Insecure-Requests': '1',
+    'if-none-match': '"bdc8d91aa8efd61:0"',
     'X-Requested-With': 'XMLHttpRequest',
     'x-requested-with': 'XMLHttpRequest',
     'pragma': 'no-cache',
@@ -48,16 +50,17 @@ headers = {
 
 data = {
   'cmd': 'logVisit',
-  'id': '327184'
+  'id': '85230'
 }
+
 # url = 'https://www.315jiage.cn/n325021.aspx'
 # url = 'https://www.315jiage.cn/n327184.aspx'
 # url = 'https://www.315jiage.cn/n134488.aspx'
-for i in range(2000, 400000):
-# for i in range(134487, 400000):
+# for i in range(2000, 400000):
+for i in range(107680, 400000):
     url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
     response = requests.post(url, headers=headers, cookies=cookies, data=data)
-    # print(response.status_code)
+    print(response.status_code)
     if response.status_code == 200:
         print(url)
         response.encoding = 'utf8'
