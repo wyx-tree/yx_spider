@@ -9,11 +9,9 @@ collection = db['result']
 
 
 
-
 cookies = {
     'HMACCOUNT_BFESS': '98606595895E1C2C',
     'BAIDUID_BFESS': 'A0D185949257010435344FBD96EC16C3:FG=1',
-    'ab_sr': '1.0.0_MDZhNDhlZDA4ZjRiNTU1NzNlNWI0YzQ1MDJkNmMyMDcwZDI1Zjk3ZDMwMzk2YzQ0MjgyODk5Y2FkYTA3MGE0YjQ3NmMzZTk0YTY5ZTRjM2FkNjlmYmFkNmFhZDExY2I4',
 }
 
 headers = {
@@ -28,13 +26,12 @@ headers = {
     'sec-fetch-mode': 'cors',
     'sec-fetch-user': '?1',
     'sec-fetch-dest': 'empty',
-    'referer': 'https://www.315jiage.cn/n364070.aspx',
+    'referer': 'https://www.315jiage.cn/n362069.aspx',
     'accept-language': 'zh-CN,zh;q=0.9',
-    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=6e8c0f6c8e3f702b46d51e960a58e244889f6d90-1614059409-0-250; rtv=5293E8,17928326; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614063044',
-    'if-modified-since': 'Tue, 23 Feb 2021 06:50:19 GMT',
-    'Referer': 'https://www.315jiage.cn/n364070.aspx',
+    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=a7651f58f1fa71392efffe2a81867dfd59395b1b-1614075176-0-250; rtv=52950F,30663300; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614078328',
+    'if-modified-since': 'Tue, 23 Feb 2021 11:04:33 GMT',
+    'Referer': 'https://www.315jiage.cn/n362069.aspx',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
-    'if-none-match': '"8083f6f96014cc1:0"',
     'Connection': 'keep-alive',
     'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
     'Sec-Fetch-Site': 'cross-site',
@@ -51,14 +48,14 @@ headers = {
 
 data = {
   'cmd': 'logVisit',
-  'id': '364070'
+  'id': '362069'
 }
 
 # url = 'https://www.315jiage.cn/n325021.aspx'
 # url = 'https://www.315jiage.cn/n327184.aspx'
 # url = 'https://www.315jiage.cn/n134488.aspx'
 # for i in range(2000, 400000):
-for i in range(154764, 400000):
+for i in range(169608, 400000):
     url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
     response = requests.post(url, headers=headers, cookies=cookies, data=data)
     print(response.status_code)
