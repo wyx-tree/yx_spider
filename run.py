@@ -11,54 +11,52 @@ collection = db['result']
 
 cookies = {
     'HMACCOUNT_BFESS': '98606595895E1C2C',
-    'ab_sr': '1.0.0_ZmRkYTRkZTkyOGFhMDFiMWEzMGVmNzM5MDQzN2NkYjFjM2Q1YTAyZjY2MTkxNjZmYjNmYTc5ZGYzOGJiM2Y0Mzc2ZTRkN2JlNzA5MTYyNzFlZmEwZDJhYzMwZjQ4N2Fj',
+    'BAIDUID_BFESS': 'B583E88F61A0F53325F7BAB499A2194B:FG=1',
 }
 
 headers = {
     'authority': 'www.315jiage.cn',
-    'cache-control': 'no-cache',
+    'cache-control': 'max-age=0',
     'sec-ch-ua': '"Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"',
     'sec-ch-ua-mobile': '?0',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
     'origin': 'https://www.315jiage.cn',
     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
     'accept': '*/*',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-mode': 'cors',
     'sec-fetch-user': '?1',
     'sec-fetch-dest': 'empty',
-    'referer': 'https://www.315jiage.cn/n364243.aspx?__cf_chl_captcha_tk__=78ffdae346aab01f9581aee4f3b4a0bc725132b5-1614145390-0-AbY79Y0wKo6zVPAGmBYaIZCoPteKygvqT9dWJra0jd3bAICa6rKxO4ULaD0WQTSSZiuft7XkBnaxDv-Sq5rpqxeto3ByTnOew1_dI1jrwbdvDXR1-pVsG0hB9-oGSy6le3Mnc1Q9wxwAT57OpB_fHXRd-9mzbzahM9YFdMfsOfhMe85k_rlt_j-9ZmWCH8iWFq0tqaegd7Il0lbzidJm6cOuyLfRImMzRBvEagmFW2FwYGccMbaRJBl0dGzEvziBtlDiLfLrWOBhLtRsLzIQslFdKOGm5sIcFpp1fh__pBysKAskN2h7-S8bjbYfFkp_H1FgbTFnmA5QE08Ugo9wLrUk5L5fG0HTuqluEdpVHJMW',
+    'referer': 'https://www.315jiage.cn/n364243.aspx?__cf_chl_captcha_tk__=5bbcedceb385ed0e88a91ed3579c9032fa4edac0-1614168220-0-AWdh6cMZgDaivw_Fuw6bwqARkh366D75x2Kys6lTW988hK3CFX4BNcY7SoTpE2raReCjHM7OduDJ438BqcVvJDfDMPnKThh6Zi3VR3biXwSUwZLrPSCTQV-sw-zitql2KyYgi3gLQTJUSSvrpzk8vxqfDFL7SxtIdTLSrA0Vrp0E5dx1d2tY9BthmBuVgqNZMI2cTYIMfoJGaNgFmsjp7kZM3mG1cuFYPs2K7IQvQmRKbeNFWivZL7cnmmpiW43jsyOVmlJmxOkyZzy4x0Pl3j9FDcZ9pEGbnTUUJwoVuShoPdpcXOnBnGp08ccRvU7MnvpcLbwiE3qvHOFd4ox-vQoBme5VrDCt6XWFEPJD1TWI',
     'accept-language': 'zh-CN,zh;q=0.9',
-    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=7fb58bb8cb093f3f1a2dcd884db4cf5a02db5174-1614145398-0-250; rtv=5299FC,20143442; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614154790',
-    'if-modified-since': 'Tue, 31 May 2016 04:46:49 GMT',
+    'cookie': '__cfduid=d28e514d3b45380fb95958c27498274c11613642406; iwmsGid=0FVZL399S8DAZVXFHT4S; Hm_lvt_4cce664ec5d8326cc457ab09053c15b2=1613642407,1613642563,1613973475; cf_clearance=3d508990fde67d2dc27f84eede83d2c69e1641b0-1614168227-0-250; rtv=529AEB,33302333; Hm_lpvt_4cce664ec5d8326cc457ab09053c15b2=1614168228',
     'if-none-match': '"80823d71f7bad11:0"',
+    'if-modified-since': 'Tue, 31 May 2016 04:46:49 GMT',
     'Connection': 'keep-alive',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
     'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
     'Sec-Fetch-Site': 'cross-site',
     'Sec-Fetch-Mode': 'no-cors',
     'Sec-Fetch-Dest': 'image',
-    'Referer': 'https://www.315jiage.cn/n364243.aspx?__cf_chl_captcha_tk__=78ffdae346aab01f9581aee4f3b4a0bc725132b5-1614145390-0-AbY79Y0wKo6zVPAGmBYaIZCoPteKygvqT9dWJra0jd3bAICa6rKxO4ULaD0WQTSSZiuft7XkBnaxDv-Sq5rpqxeto3ByTnOew1_dI1jrwbdvDXR1-pVsG0hB9-oGSy6le3Mnc1Q9wxwAT57OpB_fHXRd-9mzbzahM9YFdMfsOfhMe85k_rlt_j-9ZmWCH8iWFq0tqaegd7Il0lbzidJm6cOuyLfRImMzRBvEagmFW2FwYGccMbaRJBl0dGzEvziBtlDiLfLrWOBhLtRsLzIQslFdKOGm5sIcFpp1fh__pBysKAskN2h7-S8bjbYfFkp_H1FgbTFnmA5QE08Ugo9wLrUk5L5fG0HTuqluEdpVHJMW',
+    'Referer': 'https://www.315jiage.cn/n364243.aspx?__cf_chl_captcha_tk__=5bbcedceb385ed0e88a91ed3579c9032fa4edac0-1614168220-0-AWdh6cMZgDaivw_Fuw6bwqARkh366D75x2Kys6lTW988hK3CFX4BNcY7SoTpE2raReCjHM7OduDJ438BqcVvJDfDMPnKThh6Zi3VR3biXwSUwZLrPSCTQV-sw-zitql2KyYgi3gLQTJUSSvrpzk8vxqfDFL7SxtIdTLSrA0Vrp0E5dx1d2tY9BthmBuVgqNZMI2cTYIMfoJGaNgFmsjp7kZM3mG1cuFYPs2K7IQvQmRKbeNFWivZL7cnmmpiW43jsyOVmlJmxOkyZzy4x0Pl3j9FDcZ9pEGbnTUUJwoVuShoPdpcXOnBnGp08ccRvU7MnvpcLbwiE3qvHOFd4ox-vQoBme5VrDCt6XWFEPJD1TWI',
     'Accept-Language': 'zh-CN,zh;q=0.9',
     'If-None-Match': 'e20946816f7a56ad5f166b26e3ccfff5',
     'x-requested-with': 'XMLHttpRequest',
-    'pragma': 'no-cache',
 }
 
 params = (
-    ('__cf_chl_captcha_tk__', '78ffdae346aab01f9581aee4f3b4a0bc725132b5-1614145390-0-AbY79Y0wKo6zVPAGmBYaIZCoPteKygvqT9dWJra0jd3bAICa6rKxO4ULaD0WQTSSZiuft7XkBnaxDv-Sq5rpqxeto3ByTnOew1_dI1jrwbdvDXR1-pVsG0hB9-oGSy6le3Mnc1Q9wxwAT57OpB_fHXRd-9mzbzahM9YFdMfsOfhMe85k_rlt_j-9ZmWCH8iWFq0tqaegd7Il0lbzidJm6cOuyLfRImMzRBvEagmFW2FwYGccMbaRJBl0dGzEvziBtlDiLfLrWOBhLtRsLzIQslFdKOGm5sIcFpp1fh__pBysKAskN2h7-S8bjbYfFkp_H1FgbTFnmA5QE08Ugo9wLrUk5L5fG0HTuqluEdpVHJMW'),
+    ('__cf_chl_captcha_tk__', '5bbcedceb385ed0e88a91ed3579c9032fa4edac0-1614168220-0-AWdh6cMZgDaivw_Fuw6bwqARkh366D75x2Kys6lTW988hK3CFX4BNcY7SoTpE2raReCjHM7OduDJ438BqcVvJDfDMPnKThh6Zi3VR3biXwSUwZLrPSCTQV-sw-zitql2KyYgi3gLQTJUSSvrpzk8vxqfDFL7SxtIdTLSrA0Vrp0E5dx1d2tY9BthmBuVgqNZMI2cTYIMfoJGaNgFmsjp7kZM3mG1cuFYPs2K7IQvQmRKbeNFWivZL7cnmmpiW43jsyOVmlJmxOkyZzy4x0Pl3j9FDcZ9pEGbnTUUJwoVuShoPdpcXOnBnGp08ccRvU7MnvpcLbwiE3qvHOFd4ox-vQoBme5VrDCt6XWFEPJD1TWI'),
 )
 
 data = [
-  ('r', 'c46de1d30912099e7119067969318511082d2208-1614145390-0-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'),
-  ('id', '6266de14faae66bc'),
+  ('r', '15119ffadb88b420984e4c5ec51478047679b0b3-1614168220-0-AUTkxHhFBwC7vKBkvi8/V4YDOCKp9o+KST0BopbSvRa5io5675YGnOLyfyCWnOQZiFwbExzEKr+XtGos8aH6kI5gSulHmXAem4wSaQX/EVLnpKyLuliwF1fs/8zjd6y87guU7yBNSsPb1XYyFPyU7Spg/bkZtChY8T6lPc7mZJvJQ95Ex1krn98GDa+F7HhYq/80xG9caA21TOLtBS5jAmy5/69Y9ZZuP74KnRQ70T5K3drKx/VR0y+H1O5hHkqJVr63dXe4W7Gh/62Sr9S2Y+n1gvOYUCXC1AFGvVRyKSHlepTpMDSubacLR/oIZ5JWtPCWMxYi/kBGvEZfLteKtx4H9XaIQsFPMClu22GQjGsM9pduj1PS/D6nSiIncIOvbqsFrC9GqRzN/e3YgVBRYFTVwBpgdXJwIjnxbaokmfGe55RlzYS/38QHYy/5dh0MYJAljMm3p1Kl0jU7sFGwULtCldiBoK4ciOIbshgNRxDdhcPijAmNR3H06R/yonkgPloWUFs1n21B9xB6VUKSud/tDnwkSHD8OXGjEoWhmqdpZ0Jci+f2CydIG7g7DSBbjF38GFnpfVPgzjsCbgSgPRXCSkgx3kKqdLHTXFEM6LqG+rxzxm3EVNltnXpKMfb7zckzwbEgj5cWZ2PyNW6iRNnQR6SjICj9NtcW07qZtuDGPzKtVTkwQEhAcwj7SPE4PaBiqbRbvACUdCqvlBwMyRr0dI4j09IrUwNnBlrM4/RlXZLSc2vBFSt1eGJ4ZJEz4UrfB+yUUV5JyW/wK0MPwTMFCJa9O3QP4FOiGGA0Mj4zXHqOItnHQGn0INVswiiGj6K9k2K0qT9Ti9xJPqyMkY4OzK3n+qQDJRFMVybC32hZ48M6Tmr7yeY0gfmOfihvWQAXWerjIGnGgFpeVnHv8HD15CPRax1tk/A8s9otkMky1afKbMALq2f0B/ukXIJce9jjmZ0sY7ggCXTB2CxOKHlkfSGeLjW4R4F1BFROIFSTHLgV6BZPEgArcKfJELTW7J93J+qGzhm/66KtS1+uqAL7v1v4XYzqygTKAy2KR63U8XgPBUhZEzsNRktpKZWzYmZWPlnp4an3WPabhpjv8j/PXRLU4fJ4fInkzDN1/BmShgpuFTNJQo5bAE1A6T2jHXpz4Db3lCE2fRzPMQMCuAab47IMKT6xJI+zIisUorquHXRnvFpdudWi+TXdITXrc23aQU9gN562Ajwb6N3Zzau/OIlucy81pYJIZqBypLXzqp1APAWip2qMtLfyPkH2DK8dSSwq8pqkS1TE+mXqGBktzN++CGox6+1wGgoiTbV7y7t6z7Jc8zAGT/Mjp/muXmbsY1YS9/FYcmXp1DdrTXt+w/BfXagFMsEC5uUv8AH4NLodKS3+0QHY4BExzBVmcI4k+E//RVdJ2eR8gEBXbcjt95LeMH4KNEHjxh1JDi4EYXWbDnMQ0J/uxOa+ogulNLRGdEMS9P+NE5kN7JwId52vrTJupi02jW7neM5W2fgH6LFDA9PzKClQyjoVXce1u4xSJR3at/QKiZtYTlJKeqRd9hsj6VUJyO6IgSuKzV0MotXut77d1AaUTD9jGSgToBaXwFNx6LEbgBvFnZ3XVRPKc/DskBjHhJaObmazqlJn1GYLFtfTuqcmDB2xkXV/6jbL9UIPau4ULRnzYVIcvSs4QL2KAbQ8NcvyXx6O/Boc1zNt7vFRhPP/7uXFfG0O5w9TgvU8esZwgORKrF/BLJ4yjALlc06TGKPHUS0EUnwBoAXzUXcIpRrYoh21/RgKqnLOhfqXoQzpPl8wndc1VY2V+x7z/D1GNAUCqxjGID0WAeBUj/7TJtBEw8yme/jaqG9InM71Fhm4pktGMrS+5otneDirN3RYTJQ/HGFBQpV2T4xKuiR40OPUjzwqZzVwX1H8lMyvpkyWNdvZPzWZ7xvWwANBsOcZVuuPconFn7oD56fc+v6bzRTX8A0dVw+mSg=='),
+  ('id', '62690b743d7366aa'),
   ('id', '364243'),
-  ('captcha_challenge_field', '364527B3CD663E654B6F1D3B2D733188465E2076C09EE86E8D15942F43ADB2D4EF9C760D2BB07A067EEF783153358444'),
-  ('manual_captcha_challenge_field', 'bhq8h'),
+  ('captcha_challenge_field', 'B4E479DA43B380CD5B1BCCB5190FFDB9262BEFAFBA9166CA15EE99CE6C893C6D845D9EF256344953358C085648817F46'),
+  ('manual_captcha_challenge_field', '7yatp'),
   ('cmd', 'logVisit'),
 ]
-
 
 #NB. Original query string below. It seems impossible to parse and
 #reproduce query strings 100% accurately so the one below is given
@@ -70,7 +68,7 @@ data = [
 # url = 'https://www.315jiage.cn/n327184.aspx'
 # url = 'https://www.315jiage.cn/n134488.aspx'
 # for i in range(2000, 400000):
-for i in range(247330, 400000):
+for i in range(267281, 400000):
     url = 'https://www.315jiage.cn/n{}.aspx'.format(i)
     response = requests.post(url, headers=headers, params=params, cookies=cookies, data=data)
     print(response.status_code)
