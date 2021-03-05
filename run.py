@@ -14,8 +14,6 @@ for i in collection.find({'is_crawl': {'$exists': False}}):
     try:
 
         url = 'https://www.315jiage.cn/n{}.aspx'.format(i['id'])
-        # time.sleep(1)
-
         response = requests.post(url, headers=headers, params=params, cookies=cookies, data=data, proxies=proxies)
         print(response.status_code)
         if response.status_code == 200:
