@@ -3,7 +3,7 @@ import time
 
 import requests
 from lxml import etree
-from .setting import *
+from setting import *
 from pymongo import MongoClient
 
 client = MongoClient('mongodb://root:123456@172.16.10.136:27017/')
